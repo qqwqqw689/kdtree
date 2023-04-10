@@ -7,7 +7,7 @@ This package provides a simple implementation of a kd-tree in Python.
 https://en.wikipedia.org/wiki/K-d_tree
 """
 
-from __future__ import print_function
+from __future__ import print_function # compatible with both Python 2.x and 3.x
 
 import heapq
 import itertools
@@ -34,7 +34,7 @@ class Node(object):
         self.right = right
 
 
-    @property
+    @property #  define a method as a "getter" for a class attribute
     def is_leaf(self):
         """ Returns True if a Node has no subnodes
 
